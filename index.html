@@ -9,36 +9,80 @@
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
-<body>
+<body class="main-container">
 
-  Bill
+  <header class="main-logo"></header>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <main class="grid-container">
 
-  Number of People
+    <article class="bill-container">
+      <h3 class="bill-container-heading">Bill</h3>
+      <section class="bill-total-container">
+        <img class="icon dollar-icon" src="images/icon-dollar.svg" alt="dollar symbol icon">
+        <input id="bill-total" class="bill-total-copy" type="number" placeholder="0.00" min="0.00" step="0.01" placeholder="Enter bill total">
+      </section>
+    </article>
 
-  Tip Amount
-  / person
+    <article class="tip-container">
+      <h3 class="tip-container-heading">Select Tip %</h3>
+      <section class="tip-btn-container">
+        <button class="btn">5%</button>
+        <button class="btn">10%</button>
+        <button class="btn btn-selected">15%</button>
+        <button class="btn">20%</button>
+        <button class="btn">25%</button>
+        <button class="btn btn-custom">Custom<input id="custom-btn" class=btn-custom type="Text" placeholder="Custom"></button>
+      </section>
+    </article>
 
-  Total
-  / person
+    <article class="number-of-people-container">
+      <h3 class="number-of-people-container-heading">Number of People</h3>
+      <section class="total-people-container">
+        <img class="icon person-icon" src="images/icon-person.svg" alt="person icon">
+        <input type="number" placeholder="0">
+      </section>
+    </article>
 
-  Reset
+    <article class="results-container">
+      <section class="amounts-container">
+        <section class="tip-per-person-container">
+          <div class="results-copy-container">
+            <h4 class="tip-per-person-headline">Tip Amount</h4>
+            <p class="tip-per-person-copy">/ person</p>
+          </div>
+          <p id="tip-per-person-result" class="total-amount-result"><span class="dollar-icon"></span>0.00</p>
+        </section>
+        <section class="total-per-person-container">
+          <div class="results-copy-container">
+            <h4 class="total-per-person-headline">Total</h4>
+            <p class="total-per-person-copy">/ person</p>
+          </div>
+          <p id="total-per-person-result" class="total-amount-result"><span class="dollar-icon"></span>0.00</p>
+        </section>
+      </section>
+      <button class="btn reset-btn">Reset</button>
+    </article>
+
   
-  <div class="attribution">
+
+  
+  
+
+  
+  
+
+  
+  </main>
+  
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+  <script src="js/main.js"></script>
 </body>
 </html>
