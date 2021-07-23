@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -24,7 +27,7 @@
       <h3 class="bill-container-heading">Bill</h3>
       <section class="bill-total-container">
         <img class="icon dollar-icon" src="images/icon-dollar.svg" alt="dollar symbol icon">
-        <input id="bill-total" class="bill-total-copy" type="number" placeholder="0.00" min="0.00" step="0.01" placeholder="Enter bill total">
+        <input id="bill-total" class="bill-total-copy" type="number" placeholder="0.00" min="0.00" step="0.01">
       </section>
     </article>
 
@@ -36,7 +39,7 @@
         <button class="btn btn-selected">15%</button>
         <button class="btn">20%</button>
         <button class="btn">25%</button>
-        <button class="btn btn-custom">Custom<input id="custom-btn" class=btn-custom type="Text" placeholder="Custom"></button>
+        <input id="custom-btn" class=" btn btn-custom" type="Text" placeholder="Custom">
       </section>
     </article>
 
@@ -67,16 +70,6 @@
       </section>
       <button class="btn reset-btn">Reset</button>
     </article>
-
-  
-
-  
-  
-
-  
-  
-
-  
   </main>
   
   <!-- <div class="attribution">

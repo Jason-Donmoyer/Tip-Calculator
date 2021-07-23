@@ -1,0 +1,83 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
+/* GLOBAL STYLES AND VARIABLES */
+
+:root {
+
+  /* Colors */
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --very-dark-grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Fonts */
+
+  /* Form Input Font Size */
+  --form-input-font-size: 24px;
+
+  /* Font Family */
+  --space-mono: 'Space Mono', monospace;
+
+  /* Font-Weights */
+  --reg-font-weight: 400;
+  --med-font-weight: 500;
+  --bold-font-weight: 700;
+
+}
+
+
+/* HTML */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Main Container / Body */
+.main-container {
+  width: 375px;
+  font-family: var(--space-mono);
+  background-color: var(--light-grayish-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Grid Container / Main */
+.grid-container {
+  display: grid;
+  justify-items: center;
+  min-width: 100vw;
+  background-color: var(--white);
+  height: 49.3125rem;
+  border-radius: 1.5625rem 1.5625rem 0 0;
+}
+
+
+/* MAIN STYLES */
+
+
+/* Header */
+.main-logo {
+  width: 5.41625rem;
+  height: 3.32125rem;
+  margin-top: 3.125rem;
+  margin-bottom: 2.55375rem;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.tip-container {
+  width: 19.4375rem;
+}
